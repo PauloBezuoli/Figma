@@ -2,6 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Roboto:wght@300;400;700&display=swap');
 
+:root {
+    --cor--primaria: #674188;
+    --cor--secundaria: #FFFBF5;
+    --cor-terciaria: #C3ACD0;
+    --cor--hover: #C3ACD0;
+
+    --fonte--principal: 'Krona One', sans-serif;
+    --fonte--secundaria: 'Montserrat', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,14 +20,25 @@
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: var(--cor--primaria);
+    color: var(--cor--secundaria);
     box-sizing: border-box;
 }
 
+.cabeçalho__menu {
+    padding: 2% 0% 0% 6%;
+    display: flex;
+    gap: 80px;
+}
+
+.cabeçalho__menu__link {
+    font-family: var(--fonte--secundaria);
+    color: var(--cor-terciaria);
+
+}
 
 .titulo-destaque {
-    color: #22d4fd;
+    color: var(--cor-terciaria);
 }
 
 .apresentacao {
@@ -37,13 +58,13 @@ body {
 
 .apresentacao-conteudo h1 {
     font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte--principal);
     line-height: 56px;
     font-weight: 400;
 }
 
 .apresentacao-conteudo p {
-    font-family: 'Montserrat';
+    font-family: var(--fonte--secundaria);
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
@@ -51,7 +72,7 @@ line-height: 36px;
 }
 
 #texto-redes {
-    font-family: 'Krona One';
+    font-family: var(--fonte--principal);
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -73,8 +94,8 @@ line-height: 36px;
 }
 
 #ancoras a {
-    border: 1px solid #22d4fd;
-    color: white;
+    border: 1px solid var(--cor-terciaria);
+    color: var(--cor--secundaria);
     width: 381px;
     text-align: center;
     padding-bottom: 32px;
@@ -87,12 +108,17 @@ line-height: 36px;
     gap: 10px;
 }
 
+#ancoras a:hover {
+    background-color: var(--cor--hover);
+    color: var(--cor--primaria);
+}
+
 footer {
-    font-family: 'Montserrat';
+    font-family: var(--fonte--secundaria);
     font-size: 24px;
     font-weight: 400;
-    background-color: #22d4fd;
+    background-color: var(--cor-terciaria);
     padding: 24px;
     text-align: center;
-    color: black;
+    color: var(--cor--primaria);
 }
