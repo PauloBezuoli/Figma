@@ -113,6 +113,10 @@ line-height: 36px;
     color: var(--cor--primaria);
 }
 
+.instagram-media {
+    width: 80%;
+}
+
 footer {
     font-family: var(--fonte--secundaria);
     font-size: 24px;
